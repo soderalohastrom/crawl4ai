@@ -1,7 +1,7 @@
 import unittest, os
 from crawl4ai.web_crawler import WebCrawler
 from crawl4ai.chunking_strategy import RegexChunking, FixedLengthWordChunking, SlidingWindowChunking
-from crawl4ai.extraction_strategy import CosineStrategy, LLMExtractionStrategy, TopicExtractionStrategy, NoExtractionStrategy
+from crawl4ai.extraction_strategy import CosineStrategy, LLMExtractionStrategy, ExtractionStrategy, NoExtractionStrategy
 
 class TestWebCrawler(unittest.TestCase):
     

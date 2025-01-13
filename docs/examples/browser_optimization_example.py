@@ -22,15 +22,9 @@ async def crawl_sequential(urls: List[str]):
     # Configure browser with optimized settings
     browser_config = BrowserConfig(
         headless=True,
-        browser_args=[
-            "--disable-gpu",  # Disable GPU acceleration
-            "--disable-dev-shm-usage",  # Disable /dev/shm usage
-            "--no-sandbox",  # Required for Docker
-        ],
         viewport={
             "width": 800,
             "height": 600,
-        },  # Smaller viewport for better performance
     )
 
     # Configure crawl settings
